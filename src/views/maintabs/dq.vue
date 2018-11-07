@@ -1,21 +1,21 @@
 <template>
-  <div class="xn">
+  <div class="dq">
      <div class="instract font8">
 说明:本分析报告统计数据均为二手住宅成交数据,主打楼盘均指中原的主打楼盘,主城数据来源于锦江区,青羊区,武侯区,成华区,金牛区,高新,天府新区(华阳)。
     </div>
     <div class="maintitle font15">
-西南区二手行情(主城)
+东区二手行情(主城)
     </div>
     <div class="content1">
         <el-row>
             <el-col :span="14">
                 <div class="chart font8 padding20">
-                   <div id="myChart13" :style="{width: '790px', height: '307px'}"></div>
+                    <div id="myChart14" :style="{width: '790px', height: '307px'}"></div>
                 </div>
             </el-col>
             <el-col :span="10">
                 <div class="grid-content bg-purple description font8">                    
-                {{dnData.month}}月西南区主城所有楼盘市场成交住宅6000套，环比下降15%；中原主打楼盘市场成交1000套，环比下降15%。
+                {{dnData.month}}月东区主城所有楼盘市场成交住宅6000套，环比下降15%；中原主打楼盘市场成交1000套，环比下降15%。
                 </div>
             </el-col>
         </el-row>
@@ -24,7 +24,7 @@
         <el-row>
             <el-col :span="12">
                 <div class="grid-content bg-purple paiban4 font8">
-                近3月西南区所有楼盘成交
+                近3月东区所有楼盘成交
                 </div>
                 <el-row>
                 <div class="tabledate paiban1 font8">
@@ -57,7 +57,7 @@
             </el-col>
            <el-col :span="12">
                 <div class="grid-content bg-purple paiban4 font8">
-                近3月西南区主打楼盘成交
+                近3月东区主打楼盘成交
                 </div>
                 <el-row>
                 <div class="tabledate paiban2 font8">
@@ -91,7 +91,7 @@
         </el-row>
     </div>
      <div class="subtitle font10">
-9月西南区楼盘成交及门店分布(主城)
+9月东区楼盘成交及门店分布(主城)
     </div>
  <div class="anniu font8 textleft padding3">
 <el-row>
@@ -105,7 +105,7 @@
    <router-view></router-view>
     </div>
      <div class="subtitle font10">
-9月西南区所有楼盘成交TOP30(主城)
+9月东区所有楼盘成交TOP30(主城)
     </div>
      <div class="table1 paiban3 font8">
           <el-row>
@@ -181,7 +181,7 @@
                </el-row>
          </div>
            <div class="subtitle font10">
-9月西南区主打楼盘成交TOP15(主城)
+9月东区主打楼盘成交TOP15(主城)
     </div>
      <div class="table2 paiban3 font8">
           <el-row>
@@ -256,7 +256,7 @@
                </el-row>
          </div>
           <div class="subtitle font10">
-9月西南区0成交主打楼盘(主城)
+9月东区0成交主打楼盘(主城)
     </div>
      <div class="table3 paiban3 font8">
           <el-row>
@@ -668,13 +668,13 @@ export default {
     };
   },
   methods: {
-    drawLine13(){
+    drawLine14(){
         // 基于准备好的dom，初始化echarts实例
-        let myChart = this.$echarts.init(document.getElementById('myChart13'))
+        let myChart = this.$echarts.init(document.getElementById('myChart14'))
         // 绘制图表
         myChart.setOption({
             title : {
-                 text: '西南区所有楼盘及主打楼盘成交走势',
+                 text: '东区所有楼盘及主打楼盘成交走势',
                  x:'center',
                  textAlign:'left'
               },
@@ -772,7 +772,7 @@ export default {
     },
     map() {
       let map = new BMap.Map(this.$refs.allmap); // 创建Map实例
-      map.centerAndZoom(new BMap.Point(103.995327,30.675225), 12); // 初始化地图,设置中心点坐标和地图级别
+      map.centerAndZoom(new BMap.Point(104.071432,30.665907), 12); // 初始化地图,设置中心点坐标和地图级别
       map.addControl(
         new BMap.MapTypeControl({
           //添加地图类型控件
@@ -864,14 +864,14 @@ export default {
   mounted() {
     this.Themap = this.map();
     this.addMarked(this.Themap);
-    this.drawLine13();
+    this.drawLine14();
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.xn {
+.dq {
   background-color: rgba(153, 204, 255, 0.1);
 }
 .instract {

@@ -19,7 +19,7 @@
       <xn></xn>
     </el-tab-pane>
     <el-tab-pane label="东区" name="five">
-      <d></d>
+      <dq></dq>
     </el-tab-pane>
   </el-tabs>
     </div>
@@ -32,7 +32,7 @@ import city from '@/views/maintabs/city.vue'
 import dn from '@/views/maintabs/dn.vue'
 import db from '@/views/maintabs/db.vue' 
 import xn from '@/views/maintabs/xn.vue'
-import d from '@/views/maintabs/d.vue'
+import dq from '@/views/maintabs/dq.vue'
 export default {
   name: 'main',
   data () {
@@ -44,7 +44,7 @@ export default {
       activeName: 'first'
     }
   },
-   components:{city,dn,db,xn,d}
+   components:{city,dn,db,xn,dq}
 
 }
 

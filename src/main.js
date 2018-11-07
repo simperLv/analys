@@ -12,7 +12,7 @@ import echarts from 'echarts'
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
-Vue.prototype.$echarts = echarts
+Vue.prototype.$echarts = echarts;
 
 /* eslint-disable no-new */
 new Vue({
